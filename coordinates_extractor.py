@@ -18,7 +18,7 @@ for filename in os.listdir(os.getcwd()):
 		with open(filename, "r") as file:
 			data = json.load(file)
 		try:
-			location_name = data["node"]["location"]["name"];
+			location_name = data["node"]["location"]["name"]
 			location = geolocator.geocode(location_name)
 			coords.write("{} {} {}\n".format(location.latitude, location.longitude, location_name))
 		except:
