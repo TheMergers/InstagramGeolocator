@@ -1,5 +1,4 @@
 from geopy.geocoders import Nominatim
-import instaloader
 import json
 import os
 
