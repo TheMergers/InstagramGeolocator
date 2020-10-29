@@ -1,4 +1,3 @@
-from geopy.geocoders import Nominatim
 import instaloader
 
 #set your own public_profile
