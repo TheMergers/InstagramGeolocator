@@ -1,7 +1,5 @@
 from geopy.geocoders import Nominatim
 import instaloader
-import json
-import os
 
 #set your own public_profile
 public_profile = "YOUR_PUBLIC_PROFILE_HERE"
