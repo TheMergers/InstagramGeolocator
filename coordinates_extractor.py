@@ -1,16 +1,19 @@
-from geopy.geocoders import Nominatim
+import hashlib
 import json
+from geopy.geocoders import Nominatim
 import os
 
-#set your own public_profile
-public_profile = "YOUR_PUBLIC_PROFILE_HERE"
-geolocator = Nominatim(user_agent="personal_user_agent_or_leave_this")
+#set your own username
+username = "YOUR_USERNAME"
+agent = hashlib.sha256(username.encode()).hexdigest()
+geolocator = Nominatim(user_agent=agent)
+coords_path = "data/coords.txt"
 
-if os.path.exists("coords.txt"):
-	os.remove("coords.txt")
+if os.path.exists(coords_path):
+	os.remove(coords_path)
 
-coords = open("coords.txt", "a")
-path = os.chdir(public_profile)
+coords = open(coords_path, "a")
+path = os.chdir("data/" + username)
 
 for filename in os.listdir(os.getcwd()):
 	data = []
