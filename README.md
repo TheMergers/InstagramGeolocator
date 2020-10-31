@@ -14,7 +14,6 @@ pip install instaloader
 - Ensure your profile is public
 - Set your public profile name in `instagram_downloader.py`
 - Set your public profile name in `coordinates_extracor.py`
-- Set a [Mapbox](https://account.mapbox.com/access-tokens/) token in `geolocator.html`
 - Download this project as zip or place everything in the same folder
 - Run `instagram_downloader.py` to extract your Instagram data
 - Re-running `instagram_downloader.py` will download your new published posts
