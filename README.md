@@ -7,7 +7,6 @@ Download your Instagram data and geolocate your photos
 ```
 pip install geopy
 pip install instaloader
-pip install json
 ```
 
 ## Usage
