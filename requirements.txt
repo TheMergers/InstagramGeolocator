@@ -1,0 +1,2 @@
+geopy==2.0.0
+instaloader==4.5.3
