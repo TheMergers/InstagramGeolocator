@@ -8,11 +8,19 @@ document.addEventListener("DOMContentLoaded", function () {
   // add the OpenStreetMap tiles
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
-    attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>',
+    attribution:
+      '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>',
   }).addTo(map);
 
   // show the scale bar on the lower left corner
   L.control.scale().addTo(map);
+
+  const usernameForm = document.getElementById("usernameForm");
+  const username = document.getElementById("username");
+
+  usernameForm.addEventListener("submit", (event) => {
+    console.log(username.value);
+  });
 });
 
 },{"leaflet":2}],2:[function(require,module,exports){

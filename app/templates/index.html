@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>InstagramGeolocator</title>
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
-    <script src="{{ url_for('static', filename='js/compiled/bundle.js') }}"></script>
+    <link
+      rel="stylesheet"
+      href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css"
+    />
+    <link rel="stylesheet" href="../static/css/index.css" />
+    <link rel="stylesheet" href="../static/css/all.css" />
+    <script src="../static/js/compiled/bundle.js"></script>
   </head>
   <body>
-    <h1>Ciao {{name}}</h1>
-    <div id="mapid" style="height: 90vh"></div>
+    <div class="login">
+      <form id="usernameForm">
+        <input type="text" class="username" id="username" />
+        <button type="submit" class="send">Conferma</button>
+      </form>
+    </div>
+    <div id="mapid"></div>
   </body>
 </html>

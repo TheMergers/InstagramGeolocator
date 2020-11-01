@@ -8,10 +8,15 @@
     "leaflet": "^1.7.1",
     "watchify": "^3.11.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "watchify ./app/static/js/main.js -o ./app/static/js/compiled/bundle.js"
+    "watchJS": "watchify ./app/static/js/main.js -o ./app/static/js/compiled/bundle.js",
+    "build-css": "node-sass ./app/static/scss -o ./app/static/css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
