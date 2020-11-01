@@ -3,9 +3,7 @@ import json
 from geopy.geocoders import Nominatim
 import os
 
-
 def dump_coordinates(ig_user, coords_path="data/coords.txt"):
-	#set your own username
 	username = ig_user
 	agent = hashlib.sha256(username.encode()).hexdigest()
 	geolocator = Nominatim(user_agent=agent)

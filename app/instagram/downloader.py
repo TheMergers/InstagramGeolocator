@@ -1,9 +1,7 @@
 import hashlib
 import instaloader
 
-
 def get_user_data(ig_user):
-	#set your own username
 	username = ig_user
 	agent = hashlib.sha256(username.encode()).hexdigest()
 
