@@ -33,7 +33,6 @@ def run():
     coords = {}
     with open(os.path.join(here, "data/coords.txt"), "r") as f:
         for i, line in enumerate(f):
-            print(line)
             lat, lng, place = line.split('\t')[:3]
             coords["coord_{}".format(i)] = {
                 "lat": lat,
