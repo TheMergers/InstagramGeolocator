@@ -1,6 +1,11 @@
 from flask import Flask, request, send_from_directory, render_template
+from instagram import instagram_downloader, coordinates_extractor
 
-app = Flask(__name__, static_url_path='')
+app = Flask(
+    "InstagramGeolocator",
+    static_url_path="",
+    template_folder="templates",
+)
 
 #@app.route('/js/<path:path>')
 #def send_js(path):
@@ -8,9 +13,15 @@ app = Flask(__name__, static_url_path='')
 
 @app.route('/')
 def root():
-    name = "Ciccio"
-    return render_template('/Users/mdeluca/_projects/__personal/InstagramGeolocator/app/templates/index.html', name=name)
+    name = request.args.get("name")
+    return render_template('index.html', name=name)
     #return app.send_static_file('./templates/index.html')
+
+@app.route('/run')
+def run():
+    
+
+
 
 if __name__ == "__main__":
     # set the project root directory as the static folder, you can set others.
