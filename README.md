@@ -7,10 +7,12 @@ Download your Instagram data and geolocate your photos.
 # Setup your environment
 
 This project uses python as backend and npm/JS as frontend.
-To run the webapp locally you need to download ad install python dependencies.
-We suggest you to create an environment and the install dependencies in it.
+
+To run the webapp locally you need to download and install python dependencies.
+We suggest you to create an environment and then install dependencies in it.
+
 You can create a python env using any of the tools available in the python ecosystem (e.g. virtualenv, pipenv ecc...).
-If you use pipenv the project comes with a Pipfile defining project dependencies, otherwise you can you requirements file and install dependencies in the classic way using pip, by running `pip install -r requirements.txt`. 
+If you use pipenv the project comes with a Pipfile defining project dependencies, otherwise you can use requirements file and install dependencies in the classic way using pip, by running `pip install -r requirements.txt`. 
 
 If you plan to do some changes for the frontend, you will also have to install npm to manage javascript dependencies.
 So you need to have npm installed on your machine and then install javascript dependencies running `npm install` at the root of the project.
