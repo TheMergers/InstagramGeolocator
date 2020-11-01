@@ -19,9 +19,7 @@ def root():
 
 @app.route('/run')
 def run():
-    
-
-
+    pass
 
 if __name__ == "__main__":
     # set the project root directory as the static folder, you can set others.
