@@ -1,6 +1,6 @@
 import hashlib
 import instaloader
-from profile import Profile
+from .profile import Profile
 
 def get_user_data(ig_user):
 	profile = Profile(ig_user)
@@ -9,7 +9,7 @@ def get_user_data(ig_user):
 
 	loader = instaloader.Instaloader(
 		user_agent=agent,
-		dirname_pattern="data/" + username,
+		dirname_pattern="app/data/" + username,
 		download_pictures=False,
 		download_videos=False,
 		download_video_thumbnails=False,
