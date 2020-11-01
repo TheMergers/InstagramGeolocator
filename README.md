@@ -15,12 +15,11 @@ pip install geopy
 ## Usage
 
 - Ensure your profile is public
-- Set your username in `instagram_downloader.py`
-- Set your username in `coordinates_extracor.py`
+- Set your username in the login page
 - Download this project as zip or place everything in the same folder
-- Run `instagram_downloader.py` to extract your Instagram data
-- Re-running `instagram_downloader.py` will download your new published posts
-- Run `coordinates_extractor.py`, `coords.txt` will be created
+- Run `downloader.py` to extract your Instagram data
+- Re-running `downloader.py` will download your new published posts
+- Run `extractor.py`, `coords.txt` will be created
 - Open `index.html` in a browser
 
 ## Contributing
