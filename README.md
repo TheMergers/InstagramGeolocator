@@ -30,7 +30,7 @@ pip install geopy
 - CTRL + C on the prompt
 - Run `netstat -ano | findstr :5000`
 - Look for the PID
-- Run `taskkill /PID you_PID /F`
+- Run `taskkill /PID your_PID /F`
 
 <strong>Unix</strong>
 - Use `pkill`
