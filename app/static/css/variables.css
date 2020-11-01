@@ -5,3 +5,23 @@
 @font-face {
   font-family: NerdFont;
   src: url("../fonts/NerdFont.ttf"); }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes comeup {
+  0% {
+    transform: scale(0.8);
+    top: 100vh;
+    background: #212931; }
+  50% {
+    transform: scale(0.8);
+    top: 0;
+    border-radius: 20px;
+    background: #212931; }
+  100% {
+    transform: scale(1);
+    border-radius: 0; } }

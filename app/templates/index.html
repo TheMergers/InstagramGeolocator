@@ -13,8 +13,8 @@
     <script src="../static/js/compiled/bundle.js"></script>
   </head>
   <body>
-    <h1 class="title">InstagramGeolocator</h1>
     <div class="login">
+      <h1 class="title">InstagramGeolocator</h1>
       <input
         type="text"
         class="username"
@@ -22,7 +22,10 @@
         placeholder="Username"
       />
       <button type="submit" class="send" id="send">Conferma</button>
+      <div id="loading"></div>
     </div>
-    <div id="mapid"></div>
+    <div id="app">
+      <div id="map"></div>
+    </div>
   </body>
 </html>
