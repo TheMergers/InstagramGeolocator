@@ -14,13 +14,26 @@ pip install geopy
 
 ## Usage
 
-- Ensure your profile is public
-- Set your username in the login page
+### How to run
+
+- Ensure your Instagram profile is public
 - Download this project as zip or place everything in the same folder
-- Run `downloader.py` to extract your Instagram data
-- Re-running `downloader.py` will download your new published posts
-- Run `extractor.py`, `coords.txt` will be created
-- Open `index.html` in a browser
+- Open a terminal/cmd inside the folder and run a `npm install`
+- Now run `python app/server.py`
+- Open your favourite browser and look for `http://127.0.0.1:5000/`
+- Submit your Instagram username
+- Wait depending on the number of posts you have. You can track the process looking at the terminal.
+
+### How to exit
+
+<strong>Windows</strong>
+- CTRL + C on the prompt
+- Run `netstat -ano | findstr :5000`
+- Look for the PID
+- Run `taskkill /PID you_PID /F`
+
+<strong>Unix</strong>
+- Use `pkill`
 
 ## Contributing
 
