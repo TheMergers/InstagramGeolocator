@@ -1,4 +1,4 @@
 #!/bin/bash
 
-npm run start &
+npm run watchJS &
 python ./app/server.py &

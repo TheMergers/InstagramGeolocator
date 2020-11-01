@@ -1,8 +1,8 @@
-import hashlib
-import json
-from geopy.geocoders import Nominatim
 import os
-from .profile import Profile
+import json
+import hashlib
+from geopy.geocoders import Nominatim
+from instagram.profile import Profile
 
 def dump_coordinates(ig_user, coords_path="app/data/coords.txt"):
 	profile = Profile(ig_user)

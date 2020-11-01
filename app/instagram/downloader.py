@@ -1,6 +1,6 @@
 import hashlib
 import instaloader
-from .profile import Profile
+from instagram.profile import Profile
 
 def get_user_data(ig_user):
 	profile = Profile(ig_user)
@@ -15,7 +15,7 @@ def get_user_data(ig_user):
 		download_video_thumbnails=False,
 		download_comments=False,
 		compress_json=False,
-    	        request_timeout=2
+    	request_timeout=2
 	)
 
 	loader.download_profile(profile_name=username)
