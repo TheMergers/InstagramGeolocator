@@ -11,8 +11,6 @@ def dump_coordinates(ig_user, coords_path="data/coords.txt"):
 
 	geolocator = Nominatim(user_agent=agent)
 
-	coords_path = coords_path
-
 	if os.path.exists(coords_path):
 		os.remove(coords_path)
 
