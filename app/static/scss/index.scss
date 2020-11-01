@@ -1,33 +1,40 @@
 @import "./variables.scss";
 
+.title {
+  color: $color_3;
+  font-family: Pacifico;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 60px;
+  font-weight: 100;
+}
+
 .login {
   padding: 50px;
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-    .username {
-      padding: 30px 50px;
-      font-size: 50px;
-      background: $color_2;
-      border-radius: 100px;
-      color: $color_8;
-      margin: 50px;
-    }
+  .username {
+    padding: 30px 50px;
+    font-size: 50px;
+    background: $color_2;
+    border-radius: 100px;
+    color: $color_8;
+    margin: 50px;
+  }
 
-    .send {
-      transition: 0.5s;
-      font-size: 30px;
-      padding: 20px 50px;
-      background: $color_6;
-      color: $color_1;
-      border-radius: 100px;
-      cursor: pointer;
-      &:hover {
-        transform: scale(1.1);
-      }
+  .send {
+    transition: 0.5s;
+    font-size: 30px;
+    padding: 20px 50px;
+    background: $color_6;
+    color: $color_1;
+    border-radius: 100px;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
     }
   }
 }

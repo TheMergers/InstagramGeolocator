@@ -1,4 +1,5 @@
 const L = require("leaflet");
+const axios = require("axios");
 
 document.addEventListener("DOMContentLoaded", function () {
   // initialize Leaflet
@@ -14,10 +15,18 @@ document.addEventListener("DOMContentLoaded", function () {
   // show the scale bar on the lower left corner
   L.control.scale().addTo(map);
 
-  const usernameForm = document.getElementById("usernameForm");
+  const sendButton = document.getElementById("send");
   const username = document.getElementById("username");
 
-  usernameForm.addEventListener("submit", (event) => {
+  sendButton.addEventListener("click", (event) => {
+    event.preventDefault();
     console.log(username.value);
+    axios
+      .get("/run:5000", {
+        iguser: username.value,
+      })
+      .then(function (response) {
+        console.log(response);
+      });
   });
 });
