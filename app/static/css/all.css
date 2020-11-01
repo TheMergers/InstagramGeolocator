@@ -1,0 +1,38 @@
+@font-face {
+  font-family: Pacifico;
+  src: url("../fonts/Pacifico.ttf"); }
+
+@font-face {
+  font-family: NerdFont;
+  src: url("../fonts/NerdFont.ttf"); }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes comeup {
+  0% {
+    transform: scale(0.8);
+    top: 100vh;
+    background: #212931; }
+  50% {
+    transform: scale(0.8);
+    top: 0;
+    border-radius: 20px;
+    background: #212931; }
+  100% {
+    transform: scale(1);
+    border-radius: 0; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box; }
+
+body {
+  background: #1b2128;
+  color: #e5e5e5; }

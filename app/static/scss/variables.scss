@@ -1,0 +1,45 @@
+// Varibles
+$color_1: #1b2128;
+$color_2: #212931;
+$color_3: #dd83a0;
+$color_4: #63aec0;
+$color_5: #e25987;
+$color_6: #85ba86;
+$color_7: #b877b4;
+$color_8: #e5e5e5;
+
+@font-face {
+  font-family: Pacifico;
+  src: url("../fonts/Pacifico.ttf");
+}
+@font-face {
+  font-family: NerdFont;
+  src: url("../fonts/NerdFont.ttf");
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes comeup {
+  0% {
+    transform: scale(0.8);
+    top: 100vh;
+    background: $color_2;
+  }
+  50% {
+    transform: scale(0.8);
+    top: 0;
+    border-radius: 20px;
+    background: $color_2;
+  }
+  100% {
+    transform: scale(1);
+    border-radius: 0;
+  }
+}

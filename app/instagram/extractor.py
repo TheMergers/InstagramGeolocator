@@ -2,9 +2,9 @@ import hashlib
 import json
 from geopy.geocoders import Nominatim
 import os
-from profile import Profile
+from .profile import Profile
 
-def dump_coordinates(ig_user, coords_path="data/coords.txt"):
+def dump_coordinates(ig_user, coords_path="app/data/coords.txt"):
 	profile = Profile(ig_user)
 	username = profile.get_username()
 	agent = profile.get_agent()
@@ -17,7 +17,7 @@ def dump_coordinates(ig_user, coords_path="data/coords.txt"):
 		os.remove(coords_path)
 
 	coords = open(coords_path, "a")
-	os.chdir("data/" + username)
+	os.chdir("app/data/" + username)
 
 	for filename in os.listdir(os.getcwd()):
 		data = []

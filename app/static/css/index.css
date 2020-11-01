@@ -1,0 +1,86 @@
+@font-face {
+  font-family: Pacifico;
+  src: url("../fonts/Pacifico.ttf"); }
+
+@font-face {
+  font-family: NerdFont;
+  src: url("../fonts/NerdFont.ttf"); }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes comeup {
+  0% {
+    transform: scale(0.8);
+    top: 100vh;
+    background: #212931; }
+  50% {
+    transform: scale(0.8);
+    top: 0;
+    border-radius: 20px;
+    background: #212931; }
+  100% {
+    transform: scale(1);
+    border-radius: 0; } }
+
+.login {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .login .title {
+    color: #dd83a0;
+    font-family: Pacifico;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 60px;
+    font-weight: 100; }
+  .login .username {
+    padding: 30px 50px;
+    font-size: 50px;
+    background: #212931;
+    border-radius: 100px;
+    color: #e5e5e5;
+    margin: 50px; }
+  .login .send {
+    transition: 0.5s;
+    font-size: 30px;
+    padding: 20px 50px;
+    background: #85ba86;
+    color: #1b2128;
+    border-radius: 100px;
+    cursor: pointer; }
+    .login .send:hover {
+      transform: scale(1.1); }
+  .login #loading {
+    font-size: 20px;
+    text-align: center; }
+  .login #loading.loading {
+    transition: 1s;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: 50px auto;
+    border-top: 2px solid #b877b4;
+    animation: spin 1s linear infinite; }
+
+.app {
+  animation: comeup;
+  animation-duration: 1s;
+  background: #1b2128;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .app #map {
+    height: calc(100% - 150px);
+    width: calc(100% - 150px); }
