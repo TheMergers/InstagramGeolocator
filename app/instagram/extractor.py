@@ -2,13 +2,15 @@ import hashlib
 import json
 from geopy.geocoders import Nominatim
 import os
-
+from profile import Profile
 
 def dump_coordinates(ig_user, coords_path="data/coords.txt"):
-	#set your own username
-	username = ig_user
-	agent = hashlib.sha256(username.encode()).hexdigest()
+	profile = Profile(ig_user)
+	username = profile.get_username()
+	agent = profile.get_agent()
+
 	geolocator = Nominatim(user_agent=agent)
+
 	coords_path = coords_path
 
 	if os.path.exists(coords_path):
