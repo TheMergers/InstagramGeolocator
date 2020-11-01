@@ -27,13 +27,14 @@ pip install geopy
 ### How to exit
 
 <strong>Windows</strong>
-- CTRL + C on the prompt
+- CTRL + C
 - Run `netstat -ano | findstr :5000`
 - Look for the PID
 - Run `taskkill /PID your_PID /F`
 
 <strong>Unix</strong>
-- Use `pkill`
+- CTRL + C
+- Or use `pkill`
 
 ## Contributing
 
