@@ -17,7 +17,7 @@ If you use pipenv the project comes with a Pipfile defining project dependencies
 If you plan to do some changes for the frontend, you will also have to install npm to manage javascript dependencies.
 So you need to have npm installed on your machine and then install javascript dependencies running `npm install` at the root of the project.
 This will download on your local machine all the node modules defined in the `package-lock.json` in a folder called `node_modules`.
-If you do some changes to the frontend you have to recompile the bundled js. If you run the command `npm run watchJS &` (if you are on linux/mac the `&` at the end will tun this process in background), this will detect the changes in `app/static/js/main.js` and compile a new file under `app/static/js/compiled/bundle.js`. 
+If you do some changes to the frontend you have to recompile the bundled js. If you run the command `npm run watchJS &` (if you are on linux/mac the `&` at the end will run this process in background), this will detect the changes in `app/static/js/main.js` and compile a new file under `app/static/js/compiled/bundle.js`. 
 
 ### How to run
 
