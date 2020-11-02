@@ -43,4 +43,4 @@ If you do some changes to the frontend you have to recompile the bundled js. If 
 ## Contributing
 
 Any contribution or help is appreciated.
-If you're an Italian speaker, you can also join our [Discord server](https://discord.gg/n4ScGTQ4).
+If you're an Italian speaker, you can also join our [Discord server](https://discord.gg/X3QQmB44vP).
