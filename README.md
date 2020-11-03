@@ -1,4 +1,7 @@
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Version](https://badge.fury.io/gh/tterb%2FHyde.svg)](https://badge.fury.io/gh/tterb%2FHyde)
+![License](https://img.shields.io/github/license/TheMergers/Nereus)
+![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/TheMergers/Nereus)
+![CodeSize](https://img.shields.io/github/languages/code-size/TheMergers/Nereus)
 
 # Nereus
 
@@ -42,5 +45,8 @@ If you do some changes to the frontend you have to recompile the bundled js. If 
 
 ## Contributing
 
-Any contribution or help is appreciated.
+Any contribution or help is appreciated, just be sure it's readable.
+
+![GoToCounter](https://img.shields.io/github/search/TheMergers/Nereus/goto)
+
 If you're an Italian speaker, you can also join our [Discord server](https://discord.gg/X3QQmB44vP).
