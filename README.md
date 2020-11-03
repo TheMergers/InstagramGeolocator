@@ -46,6 +46,7 @@ If you do some changes to the frontend you have to recompile the bundled js. If 
 ## Contributing
 
 Any contribution or help is appreciated, just be sure it's readable.
+
 ![GoToCounter](https://img.shields.io/github/search/TheMergers/Nereus/goto)
 
 If you're an Italian speaker, you can also join our [Discord server](https://discord.gg/X3QQmB44vP).
