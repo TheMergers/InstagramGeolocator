@@ -6,7 +6,7 @@ from instagram.extractor import dump_coordinates
 here = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(
-    "InstagramGeolocator",
+    "Nereus",
     root_path=here,
     static_folder=os.path.join(here, "static"),
     template_folder=os.path.join(here, "templates"),

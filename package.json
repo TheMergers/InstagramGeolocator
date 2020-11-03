@@ -1,5 +1,5 @@
 {
-  "name": "InstagramGeolocator",
+  "name": "Nereus",
   "version": "1.0.0",
   "description": "Download your Instagram data and geolocate your photos",
   "main": "main.js",
@@ -21,13 +21,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/normaloide/InstagramGeolocator.git"
+    "url": "git+https://github.com/normaloide/Nereus.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/normaloide/InstagramGeolocator/issues"
+    "url": "https://github.com/normaloide/Nereus/issues"
   },
-  "homepage": "https://github.com/normaloide/InstagramGeolocator#readme"
+  "homepage": "https://github.com/normaloide/Nereus#readme"
 }
