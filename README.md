@@ -1,6 +1,5 @@
 [![Version](https://badge.fury.io/gh/tterb%2FHyde.svg)](https://badge.fury.io/gh/tterb%2FHyde)
 ![License](https://img.shields.io/github/license/TheMergers/Nereus)
-![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/TheMergers/Nereus)
 ![CodeSize](https://img.shields.io/github/languages/code-size/TheMergers/Nereus)
 
 # Nereus
@@ -15,12 +14,12 @@ To run the webapp locally you need to download and install python dependencies.
 We suggest you to create an environment and then install dependencies in it.
 
 You can create a python env using any of the tools available in the python ecosystem (e.g. virtualenv, pipenv ecc...).
-If you use pipenv the project comes with a Pipfile defining project dependencies, otherwise you can use requirements file and install dependencies in the classic way using pip, by running `pip install -r requirements.txt`. 
+If you use pipenv the project comes with a Pipfile defining project dependencies, otherwise you can use requirements file and install dependencies in the classic way using pip, by running `pip install -r requirements.txt`.
 
 If you plan to do some changes for the frontend, you will also have to install npm to manage javascript dependencies.
 So you need to have npm installed on your machine and then install javascript dependencies running `npm install` at the root of the project.
 This will download on your local machine all the node modules defined in the `package-lock.json` in a folder called `node_modules`.
-If you do some changes to the frontend you have to recompile the bundled js. If you run the command `npm run watchJS &` (if you are on linux/mac the `&` at the end will run this process in background), this will detect the changes in `app/static/js/main.js` and compile a new file under `app/static/js/compiled/bundle.js`. 
+If you do some changes to the frontend you have to recompile the bundled js. If you run the command `npm run watchJS &` (if you are on linux/mac the `&` at the end will run this process in background), this will detect the changes in `app/static/js/main.js` and compile a new file under `app/static/js/compiled/bundle.js`.
 
 ### How to run
 
